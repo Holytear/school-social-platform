@@ -1,0 +1,41 @@
+.posts-section {
+    padding: 20px;
+  }
+  
+  .posts-container {
+    display: flex;
+    flex-direction: column; /* Stack posts vertically */
+    gap: 20px;
+  }
+  
+  .post {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex; /* Allow profile picture and content side-by-side */
+  }
+  
+  .post-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px; /* Space between profile pic and content */
+  }
+  
+  .post-content {
+    flex-grow: 1; /* Content area takes remaining space */
+  }
+  
+  .post-header {
+    margin-bottom: 5px;
+  }
+  
+  .post-header h3 {
+    font-weight: bold;
+    margin: 0; /* Remove top and bottom margins for cleaner layout */
+  }
+  
+  .post-text {
+    margin-bottom: 10px;
+  }
+  

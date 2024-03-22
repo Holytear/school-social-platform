@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA*Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>okul sosyal platformu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="clubs.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="posts.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">IGUlife</h2>
+        <nav class="navigation">
+            <a href="posts.html">Ana Sayfa</a>
+            <a href="events.html">Etkinlikler</a>
+            <a href="clubs.html">Kulüpler</a>
+            <a href="profile.html">Profil</a>
+            <button class="btnLogin-popup">Giriş Yap</button>
+        </nav>
+        
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close">
+        </ion-icon></span>
+
+        <div class="form-box login">
+            <h2>Giriş Yap</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div><div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Şifre</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                    Beni Hatırla</label>
+                    <a href="#">Şifremi Unuttum</a>
+                </div>
+                <button type="submit" class="btn">Giriş</button>
+                <div class="login-register">
+                    <p>Hesabın mı Yok? <a href="#" class="register-link">Üye Ol</a></p>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Üye Ol</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Kullanıcı Adı</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div><div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Şifre</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Şart Ve Gizlilikleri Kabul Ediyorum</label>
+                </div>
+                <button type="submit" class="btn">Üye Ol</button>
+                <div class="login-register">
+                    <p>Hesabın var mı?<a href="#" class="login-link">Giriş Yap</a></p>
+                </div>
+
+                <div class="profile-container">
+                    <div class="profile-header">
+                      <img src="profile.jpeg" alt="Profile Picture">
+                      <h1>Selim Yalcintas</h1>
+                      <p>@johndoe</p>
+                      <button id="edit-profile-button">Profili Düzenle</button>
+                    </div>
+                    <div class="profile-info">
+                      <p>Bio: İstanbul Gelişim Üniversitesi Yönetim Bilişim Sistemleri öğrencisi.</p>
+                      <ul>
+                        <li>Takipçi: <span id="follower-count">100</span></li>
+                        <li>Takip Edilen: <span id="following-count">50</span></li>
+                      </ul>
+                    </div>
+                  </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="profile.js"></script>
+    <script src="clubs.js"></script>
+    <script src="events.js"></script>
+    <script type="module" src="auth.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js"></script>
+
+
+</body>
+</html>
